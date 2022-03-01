@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST CYE</title>
+    <script>
+        // function openAlert(){
+        //     alert('BTN clicked');
+        // }
+
+        function getBtn(){
+            let arrBtn = document.querySelectorAll('button');
+            arrBtn.forEach(elm => {
+                elm.addEventListener('click', ()=>{
+                    alert('BTN clicked');
+                });
+            });
+        }
+    </script>
+</head>
+ 
+<body onload="getBtn()">
+
+    <button>
+        1
+    </button>
+
+    <button>
+        2
+    </button>
+
+    <button>
+        3
+    </button>
+
+</body>
+
+</html>
